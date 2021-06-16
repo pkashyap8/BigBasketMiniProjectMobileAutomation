@@ -37,13 +37,14 @@ public class BigBasketLoginTest {
 		
 		driver.findElementByAndroidUIAutomator("UiSelector().text(\"Mobile Number (10-digit) / Email Address\")").sendKeys("1111111111");
 
+		//Hideing KeyBoard
 		if(driver.isKeyboardShown()) 
 		{
 			driver.hideKeyboard();
 		}
 		
 		
-		driver.findElementByAndroidUIAutomator("UiSelector().text(\"Login Using OTP\")").click();
+		    driver.findElementByAndroidUIAutomator("UiSelector().text(\"Login Using OTP\")").click();
 		
 		
 	
